@@ -17,6 +17,8 @@ function mudarLink() {
     }
 }
 
+mudarLink();
+
 // camelCase
 // PascalCase
 // snake_case
