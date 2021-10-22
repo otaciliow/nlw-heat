@@ -40,7 +40,7 @@ main {
 
 .avatar > img {
     width:16rem;
-    height:17.5rem;
+    height:17.4rem;
     object-fit:cover;
     clip-path:polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
