@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    background: url(../_img/images/background.svg);
+    background: url(./images/background.svg);
     height:812px;
     width:375px;
 }
@@ -47,8 +47,7 @@ main {
 
 .avatar span {
     position:absolute;
-    top:-20px;
-    left:-20px;
+    top:-15px;
     z-index:1;
     opacity:0.6;
 }
@@ -85,4 +84,8 @@ ul {
     gap:0.5rem;
     justify-content:center;
     align-items:center;
+}
+
+#profileLogin {
+    font-size:1.5rem;
 }
