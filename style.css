@@ -168,11 +168,20 @@ ul {
     }
 }
 
-@media (min-height:768px) and (min-width:768px) {
+@media (min-width:768px) and (max-width:769px) {
+
+    .avatar {
+        margin-top:188px;
+    }
+
+}
+
+@media (min-width:770px) and (min-height:600px) {
 
     body {
         background:url('./images/background-desktop.png') no-repeat center/cover;
         background-color:#1C1C1C;
+        position:relative;
     }
 
     main {
@@ -180,6 +189,8 @@ ul {
         height:540px;
         width:358px;
         min-height:540px;
+        position:absolute;
+        top:120px;
     }
     
     .seal-wrapper {
@@ -189,7 +200,7 @@ ul {
         justify-content:center;
         flex-direction:column;
         position:absolute;
-        top:7vh;
+        top:-55px;
     }
     
     .seal-wrapper img {
@@ -208,40 +219,5 @@ ul {
     .avatar {
         margin-top:107px;
     }
-}
 
-@media (min-height:1024px) {
-    
-    main {
-        height:57.6vh;
-        margin-top:-16rem;
-    }
-
-    .avatar {
-        margin-top:127px;
-    }
-}
-
-@media (min-width:1366px) and (min-height:1024px) {
-
-    .avatar {
-        margin-top:127px;
-    }
-
-}
-
-@media (min-height:1270px) {
-    
-    .seal-wrapper {
-        top:80px;
-    }
-
-    main {
-        height:57.6vh;
-        margin-top:-29rem;
-    }
-
-    .avatar {
-        margin-top:17.7rem;
-    }
 }
