@@ -21,9 +21,17 @@ body {
 }
 
 main {
-    background: url(./images/background.svg);
-    height:812px;
-    width:375px;
+    background: url(./images/background.svg) no-repeat center/cover;
+    /* no-repeat: impede que a imagem seja repetida diversas vezes na tela para cobrir o fundo
+    center/cover: faz com que a imagem de fundo fique centralizda e cubra toda a view width
+    utilizar essas propriedades faz com que o fundo seja responsivo e se adapte ao tamanho da tela do dispositivo */
+    height:100vh;
+    width:100vw;
+    min-height:812px;
+}
+
+.seal-wrapper {
+    display:none;
 }
 
 .container {
@@ -88,4 +96,106 @@ ul {
 
 #profileLogin {
     font-size:1.5rem;
+}
+
+@media (min-width:425px)  {
+
+    .container {
+        margin-top:-1.7rem;
+    }
+}
+@media (max-height:380px) and (orientation:landscape) {
+    body {
+        background:url('./images/background-desktop.png') no-repeat center/cover;
+        background-color:#1C1C1C;
+    }
+
+    main {
+        background:url('./images/card.png') no-repeat center/cover;
+        height:540px;
+        width:358px;
+        min-height:540px;
+        margin-top:8rem;
+    }
+    
+    .seal-wrapper {
+        width:358px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        position:absolute;
+        top:7vh;
+    }
+    
+    .seal-wrapper img {
+        position:absolute;
+    }
+
+    .seal-wrapper img:first-child {
+        z-index:2;
+    }
+    
+    .seal-wrapper img:last-child {
+        z-index:1;
+        margin-top:4px;
+    }
+    
+    .avatar {
+        margin-top:8.8rem;
+    }
+}
+
+@media (min-height:768px) and (min-width:768px) {
+
+    body {
+        background:url('./images/background-desktop.png') no-repeat center/cover;
+        background-color:#1C1C1C;
+    }
+
+    main {
+        background:url('./images/card.png') no-repeat center/cover;
+        height:540px;
+        width:358px;
+        min-height:540px;
+    }
+    
+    .seal-wrapper {
+        width:358px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        position:absolute;
+        top:7vh;
+    }
+    
+    .seal-wrapper img {
+        position:absolute;
+    }
+
+    .seal-wrapper img:first-child {
+        z-index:2;
+    }
+    
+    .seal-wrapper img:last-child {
+        z-index:1;
+        margin-top:4px;
+    }
+    
+    .avatar {
+        margin-top:6.9rem;
+    }
+}
+
+@media (min-height:1024px) {
+    
+    main {
+        height:57.6vh;
+        margin-top:-20rem;
+    }
+
+    .avatar {
+        margin-top:8.5rem;
+    }
 }
